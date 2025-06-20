@@ -34,6 +34,6 @@
 <h1 id="javascript-refresher">JavaScript Refresher</h1>
 <ul>
 <li>JS can be run via (Browser, [node.js, demo], [Capacitor, React Native])</li>
-<li>can include </li>
+<li>can include <code>&lt;script src="[filename].js"&gt;&lt;/script&gt;</code></li>
 </ul>
 
