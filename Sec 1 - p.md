@@ -23,4 +23,8 @@
 <span class="token comment"># cd -&gt;</span>
 <span class="token function">npm</span> run dev
 </code></pre>
+<ol start="3">
+<li>HTML + JS = JSX - which cannot directly render in to the browser.</li>
+</ol>
+<hr>
 
