@@ -32,4 +32,8 @@
 </code></pre>
 <hr>
 <h1 id="javascript-refresher">JavaScript Refresher</h1>
+<ul>
+<li>JS can be run via (Browser, [node.js, demo], [Capacitor, React Native])</li>
+<li>can include </li>
+</ul>
 
