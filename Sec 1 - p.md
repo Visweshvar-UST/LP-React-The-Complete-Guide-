@@ -65,4 +65,5 @@
 # the <span class="token keyword">var</span><span class="token operator">-</span>name become js object
 <span class="token keyword">import</span> <span class="token punctuation">{</span><span class="token keyword">var</span><span class="token operator">-</span>name1<span class="token punctuation">,</span> <span class="token keyword">var</span><span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>file <span class="token keyword">as</span> name<span class="token operator">-</span>u<span class="token operator">-</span>want<span class="token punctuation">}</span> <span class="token keyword">from</span> file<span class="token operator">-</span>name<span class="token punctuation">;</span>
 </code></pre>
+<pre> ```js // Only one default export allowed export default "value"; // Default import (variable name can be anything) import varName from "./file-name.js"; ``` ```javascript // Import everything as a single object import * as varName from "./file-name.js"; // Named imports and aliasing import { varName1, varInFile as nameYouWant } from "./file-name.js"; ``` </pre>
 
