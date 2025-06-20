@@ -62,7 +62,19 @@
 <span class="token keyword">import</span> <span class="token keyword">var</span><span class="token operator">-</span>name <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
 </code></pre>
 <pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> <span class="token keyword">var</span><span class="token operator">-</span>name <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
-<span class="token comment">// the var-name become js object</span>
+# the <span class="token keyword">var</span><span class="token operator">-</span>name become js object
 <span class="token keyword">import</span> <span class="token punctuation">{</span><span class="token keyword">var</span><span class="token operator">-</span>name1<span class="token punctuation">,</span> <span class="token keyword">var</span><span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>file <span class="token keyword">as</span> name<span class="token operator">-</span>u<span class="token operator">-</span>want<span class="token punctuation">}</span> <span class="token keyword">from</span> file<span class="token operator">-</span>name<span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Only one default export allowed</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token string">"value"</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Default import</span>
+<span class="token keyword">import</span> varName <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Import all exports as an object</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> varName <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Import specific exports and rename</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> var1<span class="token punctuation">,</span> originalName <span class="token keyword">as</span> customName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
 </code></pre>
 
