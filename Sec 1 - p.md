@@ -13,9 +13,14 @@
 <li>Quick way - React.new - in browser.</li>
 <li>Local React project:- vite, reactapp
 <ol start="3">
-<li>Vite -&gt;<br>
-<code>bash 	npm i 	# or 	npm install 	# cd -&gt; 	npm run dev</code></li>
+<li>Vite -&gt;</li>
 </ol>
 </li>
 </ol>
+<pre class=" language-bash"><code class="prism  language-bash">			<span class="token function">npm</span> i 
+			<span class="token comment"># or </span>
+			<span class="token function">npm</span> <span class="token function">install</span>
+			<span class="token comment"># cd -&gt;</span>
+			<span class="token function">npm</span> run dev
+</code></pre>
 
