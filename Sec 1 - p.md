@@ -17,14 +17,18 @@
 </ol>
 </li>
 </ol>
-<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> i 
-<span class="token comment"># or </span>
-<span class="token function">npm</span> <span class="token function">install</span>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> i/install
 <span class="token comment"># cd -&gt;</span>
 <span class="token function">npm</span> run dev
 </code></pre>
 <ol start="3">
 <li>HTML + JS = JSX - which cannot directly render in to the browser.</li>
 </ol>
+<p>Vite commands:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> create vite@Latest <span class="token punctuation">[</span>project-name<span class="token punctuation">]</span>
+<span class="token function">cd</span> <span class="token punctuation">[</span>project-name<span class="token punctuation">]</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token function">npm</span> run dev
+</code></pre>
 <hr>
 
