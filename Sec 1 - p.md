@@ -65,16 +65,68 @@
 # the <span class="token keyword">var</span><span class="token operator">-</span>name become js object
 <span class="token keyword">import</span> <span class="token punctuation">{</span><span class="token keyword">var</span><span class="token operator">-</span>name1<span class="token punctuation">,</span> <span class="token keyword">var</span><span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>file <span class="token keyword">as</span> name<span class="token operator">-</span>u<span class="token operator">-</span>want<span class="token punctuation">}</span> <span class="token keyword">from</span> file<span class="token operator">-</span>name<span class="token punctuation">;</span>
 </code></pre>
-<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Only one default export allowed</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token string">"value"</span><span class="token punctuation">;</span>
-
-<span class="token comment">// Default import</span>
-<span class="token keyword">import</span> varName <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
+<h4 id="variable-values">Variable, values</h4>
+<pre><code>let || const
 </code></pre>
-<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Import all exports as an object</span>
-<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> varName <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
-
-<span class="token comment">// Import specific exports and rename</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> var1<span class="token punctuation">,</span> originalName <span class="token keyword">as</span> customName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./file-name.js"</span><span class="token punctuation">;</span>
+<h4 id="operator">Operator</h4>
+<pre><code>+ _ * /
+&lt; &gt; == === &lt;= &gt;=
 </code></pre>
+<h4 id="functions">Functions</h4>
+<pre class=" language-js"><code class="prism  language-js"><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p>or</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">f_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token string">'value'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="class">Class</h4>
+<ul>
+<li>Class name should start with capital letter</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">class</span> <span class="token class-name">ClassName</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>parameter1<span class="token punctuation">,</span> parameter2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>property1 <span class="token operator">=</span> parameter1<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>property2 <span class="token operator">=</span> parameter2<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">methodName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">/* code for method */</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Or object literal</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+  age<span class="token punctuation">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+  greet<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"name"</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="arrays">Arrays</h4>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+fruits<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> index <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span>num <span class="token operator">=&gt;</span> num <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> doubled <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>n <span class="token operator">=&gt;</span> n <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="destructuring-array">Destructuring Array</h4>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">const</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> <span class="token punctuation">,</span> y<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>   <span class="token comment">// Skip</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>first<span class="token punctuation">,</span> <span class="token operator">...</span>rest<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">;</span>
+<span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>b<span class="token punctuation">,</span> a<span class="token punctuation">]</span><span class="token punctuation">;</span>              <span class="token comment">// Swap</span>
+</code></pre>
+<h4 id="spread-operation">Spread operation</h4>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arr<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>                  <span class="token comment">// → [1, 2, 3]</span>
+
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> newObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">...</span>obj<span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>             <span class="token comment">// → { a: 1, b: 2 }</span>
+
+<span class="token keyword">const</span> nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>nums<span class="token punctuation">)</span><span class="token punctuation">;</span>                           <span class="token comment">// → 20</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
+<pre class=" language-js"><code class="prism  language-js"></code></pre>
 
