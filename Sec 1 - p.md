@@ -123,10 +123,4 @@ fruits<span class="token punctuation">.</span><span class="token function">push<
 <span class="token keyword">const</span> nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>nums<span class="token punctuation">)</span><span class="token punctuation">;</span>                           <span class="token comment">// → 20</span>
 </code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
-<pre class=" language-js"><code class="prism  language-js"></code></pre>
 
