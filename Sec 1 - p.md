@@ -148,5 +148,4 @@ element<span class="token punctuation">.</span>style<span class="token punctuati
 <span class="token punctuation">}</span>
 <span class="token function">outer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// → "Inner function"</span>
 </code></pre>
-<p>asdfasdfasdfasdfasdf</p>
 
